@@ -13,6 +13,7 @@ public class View {
     public static final String STATS_HEAD = "Guess stats: ";
     public static final String OUT_OF_RANGE = "This value is out of RANGE. Repeat operation!";
     public static final String SHOW_RANGE = "RANGE is: ";
+    public static final String BOUNDS_ERROR = "Internal bounds error has occurred. Game session will be stopped immediately.";
 
     public void printMessage(String message){
         System.out.println(message);

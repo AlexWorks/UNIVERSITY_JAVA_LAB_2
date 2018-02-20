@@ -5,8 +5,8 @@ import java.util.Random;
 public class Model {
 
     private ArrayList<Integer> previousAttempts = new ArrayList<Integer>();
-    private int lowerBound;
-    private int UpperBound;
+    private int lowerBound = Integer.MIN_VALUE;
+    private int upperBound = Integer.MAX_VALUE;
     private int answerNumber;
 
     public ArrayList<Integer> getPreviousAttempts() {
@@ -22,7 +22,7 @@ public class Model {
     }
 
     public int getUpperBound() {
-        return UpperBound;
+        return upperBound;
     }
 
     public void setAnswerNumber(int answerNumber) {
@@ -30,11 +30,11 @@ public class Model {
     }
 
     public void setLowerBound(int lowerBound) {
-        this.lowerBound = lowerBound;
+            this.lowerBound = lowerBound;
     }
 
     public void setUpperBound(int upperBound) {
-        UpperBound = upperBound;
+            this.upperBound = upperBound;
     }
 
     public void updatePreviousAttempts(int attemptedValue) {

@@ -1,5 +1,7 @@
 package ua.kpi.tef;
 
+import ua.kpi.tef.Controller.Controller;
+
 /**
  * Hello world!
  *
@@ -12,6 +14,6 @@ public class App
         View view = new View();
         Controller controller = new Controller(model, view);
         // Run
-        controller.play();
+        controller.startGame();
     }
 }
