@@ -10,7 +10,7 @@ public class Model {
     private int answerNumber;
 
     public ArrayList<Integer> getPreviousAttempts() {
-        return previousAttempts;
+        return new ArrayList<>(previousAttempts);
     }
 
     public int getAnswerNumber() {
